@@ -4,6 +4,17 @@ import time
 def sieve():
     pass
 
+#incomplete function
+def binary_search(array, target):
+    left, right = 0, len(array) - 1
+    while left <= right:
+        mean = (left + right) // 2 # floor
+        if mean == target:
+            return True
+        elif mean < target:
+            mean = right - 1
+        
+
 def is_prime(n):
     if n in [2, 3, 5]:
         return True
