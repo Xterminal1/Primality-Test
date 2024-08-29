@@ -2,7 +2,10 @@ import math
 import time
 
 def sieve():
-    pass
+    return [2, 3, 5, 7, 11, 13, 17, 19, 23, 29, 31, 37, 41, 43, 47, 53, 59, 61, 67, 71, 73, 79, 83, 89, 97]
+    # list for now
+    # will be replaced by sieve of Eratosthenes
+    # then sieve of Atkin
 
 # binary search function not tested yet in vscode
 def binary_search(array, target):
