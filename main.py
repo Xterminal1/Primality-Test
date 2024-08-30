@@ -12,12 +12,12 @@ def binary_search(array, target):
     left, right = 0, len(array) - 1
     while left <= right:
         mean = (left + right) // 2 # floor
-        if mean == target:
+        if array[mean] == target:
             return True
-        elif mean > target:
-            mean = right - 1
-        else:
+        elif array[mean] < target:
             mean = left + 1
+        else:
+            mean = right - 1
     return False
 
 def is_prime(n):
@@ -35,6 +35,8 @@ def is_prime(n):
         return True
     if n < 65077:
         return pow(2, n / 2, n) in [1, n - 1] and n not in [8321, 31621, 42799, 49141, 49981]
+
+    searchLimit = 2**32 - 1
 
 def main():
     while 1:
